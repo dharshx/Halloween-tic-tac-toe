@@ -1,0 +1,125 @@
+
+/* Body */
+  body {
+    background-color: #000;
+    background-image: url('Halloween.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* defining the container styles */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  /* board styling */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    width: 300px;
+    height: 300px;
+    border: 1px solid #8b0000;
+    margin: auto;
+    background-color: #8b0000;
+  }
+
+  /* square styling */
+
+  .square {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .square.X::before {
+    content: "X";
+    color: #f00;
+  }
+  
+  .square.O::before {
+    content: "O";
+    color: #00f;
+  }
+  .board .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #fff;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .board .cell:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #8b0000;
+  }
+  
+  .board .cell.x:before {
+    content: "\\2718";
+  }
+  
+  .board .cell.o:before {
+    content: "\\25EF";
+  }
+  
+  /* header tag styling */
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #8b0000;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+  
+  /* id message styling */
+
+
+  #message {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px #8b0000;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+  
+
+  /* button styling */
+
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px #000;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #8b0000;
+  }
+  
